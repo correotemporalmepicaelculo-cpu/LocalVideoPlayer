@@ -21,7 +21,7 @@ interface HistoryDao {
     @Query("SELECT * FROM history WHERE videoPath = :videoPath ORDER BY playedAt DESC")
     suspend fun getHistoryForVideo(videoPath: String): List<HistoryEntity>
 
-    @Query("SELECT h.*, v.name, v.thumbnailPath, v.duration FROM history h INNER JOIN videos v ON h.videoPath = v.path ORDER BY h.playedAt DESC LIMIT :limit")
+    @Query("SELECT h.*, v.name, v.thumbnailPath, v.duration AS videoDuration FROM history h INNER JOIN videos v ON h.videoPath = v.path ORDER BY h.playedAt DESC LIMIT :limit")
     suspend fun getRecentHistory(limit: Int): List<HistoryWithVideo>
 
     @Query("SELECT * FROM history ORDER BY playedAt DESC")
