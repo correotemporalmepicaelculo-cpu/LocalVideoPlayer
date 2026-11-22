@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LocalVideoPlayer</string>
+    <string name="no_videos_found">No se encontraron videos</string>
+    <string name="add_folder_hint">Toca el botón + para agregar una carpeta</string>
+    <string name="add_folder">Agregar carpeta</string>
+    <string name="permission_required">Permiso requerido</string>
+    <string name="storage_permission_explanation">Esta app necesita acceso a tus archivos para escanear y reproducir videos locales. Por favor concede el permiso en la configuración.</string>
+    <string name="settings">Configuración</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Player -->
+    <string name="play_pause">Reproducir/Pausar</string>
+    <string name="rewind_10">Retroceder 10s</string>
+    <string name="forward_10">Adelantar 10s</string>
+    <string name="speed">Velocidad</string>
+    <string name="subtitles">Subtítulos</string>
+    <string name="fullscreen">Pantalla completa</string>
+    <string name="pip">Picture in Picture</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000000</color>
+    <color name="black">#000000</color>
+    <color name="divider">#333333</color>
+    <color name="error">#CF6679</color>
+    <color name="on_background">#FFFFFF</color>
+    <color name="on_error">#000000</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_surface">#FFFFFF</color>
+    <color name="on_surface_disabled">#666666</color>
+    <color name="on_surface_variant">#AAAAAA</color>
+    <color name="primary">#FF0000</color>
+    <color name="primary_variant">#CC0000</color>
+    <color name="red">#FF0000</color>
+    <color name="red_dark">#CC0000</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="surface_bright">#333333</color>
+    <color name="surface_variant">#272727</color>
+    <color name="white">#FFFFFF</color>
+    <string name="add_folder">Agregar carpeta</string>
+    <string name="add_folder_hint">Toca el botón + para agregar una carpeta</string>
+    <string name="app_name">LocalVideoPlayer</string>
+    <string name="cancel">Cancelar</string>
+    <string name="forward_10">Adelantar 10s</string>
+    <string name="fullscreen">Pantalla completa</string>
+    <string name="no_videos_found">No se encontraron videos</string>
+    <string name="permission_required">Permiso requerido</string>
+    <string name="pip">Picture in Picture</string>
+    <string name="play_pause">Reproducir/Pausar</string>
+    <string name="rewind_10">Retroceder 10s</string>
+    <string name="settings">Configuración</string>
+    <string name="speed">Velocidad</string>
+    <string name="storage_permission_explanation">Esta app necesita acceso a tus archivos para escanear y reproducir videos locales. Por favor concede el permiso en la configuración.</string>
+    <string name="subtitles">Subtítulos</string>
+    <style name="Theme.VideoPlayer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+
+        
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+
+        
+        <item name="android:textColorPrimary">@color/on_surface</item>
+        <item name="android:textColorSecondary">@color/on_surface_variant</item>
+
+        
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="Theme.VideoPlayer.NoActionBar" parent="Theme.VideoPlayer">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.VideoPlayer.Player" parent="Theme.VideoPlayer.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.VideoPlayer.Splash" parent="Theme.VideoPlayer.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>
